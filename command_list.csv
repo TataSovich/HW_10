@@ -1,0 +1,28 @@
+    1  git config --global user.name "Tatiana Androsovich"
+    2  git config --global user.email "Tata.sovich@gmail.com"
+    3  git config --global --list
+    4  git clone http://github.com/TataSovich/HW_10.git
+    5  cd HW_10
+    6  touch text_ignore.txt
+    7  echo "text_ignore.txt" >> .gitignore
+    8  git status
+    9  git add  .
+   10  git commit -m "New file created"
+   11  touch main_test.txt
+   12  git add  .
+   13  git commet -m "New file created 2"
+   14  git commit -m "New file created 2"
+   15  git branch develop
+   16  touch develop_test.txt
+   17  git add .
+   18  git commit -m "New fail created 3"
+   19  echo "just a small chenge" >> develop_test.txt
+   20  git status
+   21  git commit -m "New file created 4"
+   22  git add develop_test.txt
+   23  git commit -m "New file created 5"
+   24  git checkout main
+   25  git merge develo
+   26  git merge develop
+   27  git log
+   28  history > command_list.csv
